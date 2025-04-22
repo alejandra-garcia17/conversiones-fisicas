@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Masa</title>
+  <link rel="stylesheet" href="/CSS/pages_style/masa.css" />
+
+</head>
+<body>
+  <h1>Conversor de Masa</h1>
+  <p>Convierte entre gramos, kilogramos y miligramos.</p>
+
+  <input type="number" id="valor" placeholder="Ingrese un valor">
+
+  <select id="unidadOrigen">
+    <option value="gramo">Gramo</option>
+    <option value="kilogramo">Kilogramo</option>
+    <option value="miligramo">Miligramo</option>
+  </select>
+
+  <select id="unidadDestino">
+    <option value="gramo">Gramo</option>
+    <option value="kilogramo">Kilogramo</option>
+    <option value="miligramo">Miligramo</option>
+  </select>
+
+  <button onclick="convertir()">Convertir</button>
+
+  <h2 id="resultado"></h2>
+
+  <script src="/JS/masa.js"></script>
+</body>
+</html>

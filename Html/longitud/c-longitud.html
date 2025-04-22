@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Longitud</title>
+  <link rel="stylesheet" href="/CSS/pages_style/longitud.css"/>
+</head>
+<body>
+  <header>
+    <h1>Conversores de Física</h1>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Calculadora de Conversiones</a>
+                <div class="dropdown-content">
+                    <a href="/Html/longitud/c-longitud.html">Longitud</a>
+                    <a href="/Html/masa/c-masa.html">Masa</a>
+                    <a href="/Html/tiempo/c-tiempo.html">Tiempo</a>
+                </div>
+            </li>
+            <li><a href="/HTML/nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="/HTML/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+  <h1>Conversor de Longitud</h1>
+  <p>Convierte entre metros, kilómetros, centímetros y milímetros.</p>
+
+  <input type="number" id="valor" placeholder="Ingrese un valor">
+
+  <select id="unidadOrigen">
+    <option value="metro">Metro</option>
+    <option value="kilometro">Kilómetro</option>
+    <option value="centimetro">Centímetro</option>
+    <option value="milimetro">Milímetro</option>
+    <option value="pulgada">Pulgada</option>
+    <option value="pie">Pie</option>
+    <option value="milla">Milla</option>
+  </select>
+
+  <select id="unidadDestino">
+    <option value="metro">Metro</option>
+    <option value="kilometro">Kilómetro</option>
+    <option value="centimetro">Centímetro</option>
+    <option value="milimetro">Milímetro</option>
+    <option value="pulgada">Pulgada</option>
+    <option value="pie">Pie</option>
+    <option value="milla">Milla</option>
+  </select>
+
+  <button onclick="convertir()">Convertir</button>
+
+  <h2 id="resultado"></h2>
+
+  <script src="/JS/longitud.js"></script>
+</body>
+</html>

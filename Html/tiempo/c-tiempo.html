@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Tiempo</title>
+  <link rel="stylesheet" href="/CSS/pages_style/tiempo.css" />
+
+</head>
+<body>
+  <h1>Conversor de Tiempo</h1>
+  <p>Convierte entre segundos, minutos y horas.</p>
+
+  <input type="number" id="valor" placeholder="Ingrese un valor">
+
+  <select id="unidadOrigen">
+    <option value="segundo">Segundo</option>
+    <option value="minuto">Minuto</option>
+    <option value="hora">Hora</option>
+  </select>
+
+  <select id="unidadDestino">
+    <option value="segundo">Segundo</option>
+    <option value="minuto">Minuto</option>
+    <option value="hora">Hora</option>
+  </select>
+
+  <button onclick="convertir()">Convertir</button>
+
+  <h2 id="resultado"></h2>
+
+  <script src="/JS/tiempo.js"></script>
+</body>
+</html>

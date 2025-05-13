@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definición de Masa en Física</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f8efbd; /*cambiado*/
+        }
+        /*posible header xd*/
+        header {
+        background-color: #98a749; /*cambiado*/
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+        }
+
+        nav ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        nav ul li {
+        display: inline;
+        margin: 0 10px;
+        }
+
+        nav ul li a {
+        color: #111010;
+        text-decoration: none;
+        }
+
+        /* Estilos del menú desplegable */
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #c7bf6b; /*cambiado*/
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+        background-color: #555;
+        }
+        .accordion {
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: none;
+            outline: none;
+            padding: 10px;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        .accordion:hover {
+            background-color: #d9d9d9;
+        }
+
+        .imagen-derecha {
+            float: left;
+            margin-left: 5px; /* Añade un espacio entre la imagen y el texto */
+            margin-bottom: 10px; /* Opcional: añade un espacio debajo de la imagen */
+            margin-right: 15px;
+            max-width: 300px; /* Opcional: establece un ancho máximo para la imagen */
+            height: auto; /* Mantiene la proporción de aspecto */
+        }
+
+        .ejercicio {
+            background-color: #c7bf6b; /*cambiado*/
+            padding: 15px;
+            margin-bottom: 1em;
+            border-radius: 5px;
+        }
+        .latex {
+            font-style: italic;
+        }
+        details {
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            background-color: #efdd95; /*cambiado*/
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px 0;
+        }
+        details[open] summary {
+            margin-bottom: 10px;
+        }
+        .boton-pagina {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .boton-pagina:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conversores de Física</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Calculadora de Conversiones</a>
+                    <div class="dropdown-content">
+                        <a href="/Html/longitud/c-longitud.html">Longitud</a>
+                        <a href="/Html/masa/c-masa.html">Masa</a>
+                        <a href="/Html/tiempo/c-tiempo.html">Tiempo</a>
+                    </div>
+                </li>
+                <li><a href="/HTML/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/HTML/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Definición de Masa en Física</h1>
+    <img class="imagen-derecha" src="/IMG/tmasa.jpg" alt="Imagen representativa de masa">
+    <p>
+        La unidad de masa del Sistema Internacional (SI), el kilogramo (kg), se define como la masa de un cilindro hecho de una aleación específica de platino e iridio, que se guarda en la Oficina Internacional de Pesos y Medidas en Sèvres, Francia.
+    </p>
+    <p>
+        Esta masa estándar fue determinada en 1887 y ha permanecido sin cambios desde entonces debido a la notable estabilidad de la aleación de platino e iridio.    
+    <p><em>Fuente: Raymond A. Serway y John W. Jewett, Jr., <strong>Física para Ciencias e Ingeniería, Volumen 1, Séptima edición</strong>.</em></p>
+
+    <h2>Ejercicios Prácticos sobre Masa</h2>
+    <div class="ejercicio">
+        <h3>Ejercicio 1: Cálculo de masa a partir de densidad y volumen</h3>
+        <p>Un bloque de aluminio tiene un volumen de 0.5 m³ y una densidad de 2700 kg/m³. ¿Cuál es su masa?
+            Fórmula: \(m = \rho \cdot V \)
+        </p>
+        <details>
+            <summary>Solución</summary>
+                <li><strong>Dato:</strong>\(( V = 0.5 ) m³, ( \rho = 2700 ) kg/m³\)</li>
+                <li><strong>Fórmula:</strong>\(( m = \rho \cdot V )\)</li>
+                <li><strong>Cálculo:</strong>
+                    \([ m = 2700 \times 0.5 = 1350 \text{ kg} ]\)
+                </li>
+                <li><strong>Explicación:</strong> La masa se obtiene multiplicando la densidad del material por su volumen. Aquí, el bloque de aluminio tiene una masa de 1350 kg.</li>
+        </details>
+    </div>
+
+    <div class="ejercicio">
+        <h3>Ejercicio 2:  Masa y fuerza gravitatoria</h3>
+        <p>Un objeto con una masa de 10 kg se encuentra en la superficie de la Tierra, donde la aceleración gravitatoria es de 9.81 m/s². ¿Cuál es la fuerza que ejerce la gravedad sobre él?
+            Fórmula: \(( F = m \cdot g )\)
+        </p>
+        <details>
+            <summary>Solución</summary>
+            <li><strong>Dato:</strong>- ( m = 10 ) kg, ( g = 9.81 ) m/s²</li>
+            <li><strong>Fórmula:</strong>\(( m = \rho \cdot V )\)</li>
+            <li><strong>Cálculo:</strong>
+                \([ F = 10 \times 9.81 = 98.1 \text{ N} ]\)
+            </li>
+            <li><strong>Explicación:</strong> La fuerza gravitatoria (peso) se obtiene multiplicando la masa del objeto por la aceleración gravitatoria. En la Tierra, un objeto de 10 kg experimenta una fuerza de gravedad de 98.1 N.</li>
+            </ol>
+        </details>
+    </div>
+
+    <div class="ejercicio">
+        <h3>Ejercicio 3: Conservación de la masa en colisiones</h3>
+        <p>Un objeto de 5 kg se mueve a 4 m/s y choca con otro objeto en reposo de 3 kg. Si después del choque ambos objetos se mueven juntos, ¿cuál será su velocidad final?
+            Fórmula: \(( m_1 v_1 + m_2 v_2 = (m_1 + m_2) v_f )\)
+        </p>
+        <details>
+            <summary>Solución</summary>
+            <li><strong>Dato:</strong>\(( m_1 = 5 ) kg, ( v_1 = 4 ) m/s, ( m_2 = 3 ) kg, ( v_2 = 0 ) m/s\)</li>
+            <li><strong>Fórmula:</strong>\(- ( m_1 v_1 + m_2 v_2 = (m_1 + m_2) v_f )\)</li>
+            <li><strong>Cálculo:</strong>
+                \(- [ (5 \times 4) + (3 \times 0) = (5 + 3) v_f ] [ 20 = 8 v_f ] [ v_f = \frac{20}{8} = 2.5 \text{ m/s} ]\)
+            </li>
+            <li><strong>Explicación:</strong> Usamos la conservación del momento para calcular la velocidad final después del choque. La velocidad combinada de los objetos después de la colisión es 2.5 m/s.</li>
+            </ol>
+          </details>
+          
+    </div>
+</body>
+</html>

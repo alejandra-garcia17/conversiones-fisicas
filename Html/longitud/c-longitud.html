@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Conversor de Longitud</title>
   <link rel="stylesheet" href="/CSS/pages_style/longitud.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -24,11 +25,12 @@
         </ul>
     </nav>
 </header>
-  <h1>Conversor de Longitud</h1>
-  <p>Convierte entre metros, kilómetros, centímetros y milímetros.</p>
+<div class="contenedor">
+  <img src="https://cdn-icons-png.flaticon.com/512/2554/2554833.png" alt="regla" width="100" />
+  <h1><i class="fas fa-ruler"></i>Conversor de Longitud</h1>
+  <p>Convierte entre metros, kilómetros, centímetros, milímetros, pulgada, pie y milla.</p>
 
   <input type="number" id="valor" placeholder="Ingrese un valor">
-
   <select id="unidadOrigen">
     <option value="metro">Metro</option>
     <option value="kilometro">Kilómetro</option>
@@ -36,9 +38,8 @@
     <option value="milimetro">Milímetro</option>
     <option value="pulgada">Pulgada</option>
     <option value="pie">Pie</option>
-    <option value="milla">Milla</option>
+    <option value="milla">milla</option>
   </select>
-
   <select id="unidadDestino">
     <option value="metro">Metro</option>
     <option value="kilometro">Kilómetro</option>
@@ -46,12 +47,13 @@
     <option value="milimetro">Milímetro</option>
     <option value="pulgada">Pulgada</option>
     <option value="pie">Pie</option>
-    <option value="milla">Milla</option>
+    <option value="milla">milla</option>
   </select>
 
   <button onclick="convertir()">Convertir</button>
 
-  <h2 id="resultado"></h2>
+  <h2 id="resultado">Resultado:</h2>
+  <div id="procedimiento"></div> </div>
 
   <script src="/JS/longitud.js"></script>
 </body>

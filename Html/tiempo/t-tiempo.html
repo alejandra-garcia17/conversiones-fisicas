@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definición de Masa en Física</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f8efbd; /*cambiado*/
+        }
+        /*posible header xd*/
+        header {
+        background-color: #98a749; /*cambiado*/
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+        }
+
+        nav ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        nav ul li {
+        display: inline;
+        margin: 0 10px;
+        }
+
+        nav ul li a {
+        color: #111010;
+        text-decoration: none;
+        }
+
+        /* Estilos del menú desplegable */
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #c7bf6b; /*cambiado*/
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+        background-color: #555;
+        }
+        .accordion {
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: none;
+            outline: none;
+            padding: 10px;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        .accordion:hover {
+            background-color: #d9d9d9;
+        }
+
+        .imagen-derecha {
+            float: left;
+            margin-left: 5px; /* Añade un espacio entre la imagen y el texto */
+            margin-bottom: 80px; /* Opcional: añade un espacio debajo de la imagen */
+            margin-right: 15px;
+            max-width: 300px; /* Opcional: establece un ancho máximo para la imagen */
+            height: auto; /* Mantiene la proporción de aspecto */
+        }
+
+        .ejercicio {
+            background-color: #c7bf6b; /*cambiado*/
+            padding: 15px;
+            margin-bottom: 1em;
+            border-radius: 5px;
+        }
+        .latex {
+            font-style: italic;
+        }
+        details {
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            background-color: #efdd95; /*cambiado*/
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px 0;
+        }
+        details[open] summary {
+            margin-bottom: 10px;
+        }
+        .boton-pagina {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .boton-pagina:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conversores de Física</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Calculadora de Conversiones</a>
+                    <div class="dropdown-content">
+                        <a href="/Html/longitud/c-longitud.html">Longitud</a>
+                        <a href="/Html/masa/c-masa.html">Masa</a>
+                        <a href="/Html/tiempo/c-tiempo.html">Tiempo</a>
+                    </div>
+                </li>
+                <li><a href="/HTML/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/HTML/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Definición de Tiempo en Física</h1>
+    <img class="imagen-derecha" src="/IMG/ttiempo2.jpg" alt="Imagen representativa de tiempo">
+    <p>
+        Antes de 1960, el tiempo se medía basándose en el día solar promedio. Un segundo se definía como una fracción específica (1/86,400) de este día solar. Sin embargo, se descubrió que la rotación de la Tierra no es perfectamente constante, lo que hacía que esta definición del tiempo no fuera del todo precisa.    </p>
+    <p>
+        En 1967, la definición del segundo cambió radicalmente gracias a la invención del reloj atómico. Ahora, un segundo se define con una precisión extrema a partir de la vibración de los átomos de cesio 133. Específicamente, un segundo es igual a 9,192,631,770 periodos de esta vibración. Esta nueva definición, basada en propiedades atómicas, proporciona un estándar de tiempo mucho más estable y preciso.    
+    <p><em>Fuente: Raymond A. Serway y John W. Jewett, Jr., <strong>Física para Ciencias e Ingeniería, Volumen 1, Séptima edición</strong>.</em></p>
+    
+    <h2>Ejercicios Prácticos sobre Tiempo</h2>
+    <div class="ejercicio">
+        <h3>Ejercicio 1: Cálculo del tiempo a partir de velocidad y distancia</h3>
+        <p>Un coche viaja a una velocidad constante de 90 km/h y debe recorrer 270 km. ¿Cuánto tiempo tardará en llegar a su destino?
+            Fórmula: \(( t = \frac{d}{v} )\)
+        </p>
+        <details>
+            <summary>Solución</summary>
+                <li><strong>Dato:</strong>- ( d = 270 ) km, ( v = 90 ) km/h</li>
+                <li><strong>Cálculo:</strong>
+                    \(- [ t = \frac{270}{90} = 3 \text{ horas} ]\)
+                </li>
+                <li><strong>Explicación:</strong> El tiempo se obtiene dividiendo la distancia recorrida entre la velocidad. En este caso, el coche tardará 3 horas en llegar a su destino.</li>
+        </details>
+    </div>
+
+    <div class="ejercicio">
+        <h3>Ejercicio 2:  Tiempo de caída libre</h3>
+        <p>Un objeto se deja caer desde una altura de 20 m. ¿Cuánto tiempo tarda en llegar al suelo? (Considerando que la aceleración gravitatoria es ( g = 9.81 ) m/s² y despreciando la resistencia del aire).
+            Fórmula: \(( t = \sqrt{\frac{2d}{g}} )\)
+        </p>
+        <details>
+            <summary>Solución</summary>
+            <li><strong>Dato:</strong>- ( d = 20 ) m, ( g = 9.81 ) m/s²</li>
+            <li><strong>Cálculo:</strong>
+                \([ t = \sqrt{\frac{2 \times 20}{9.81}} = \sqrt{\frac{40}{9.81}} = \sqrt{4.08} \approx 2.02 \text{ s} ]\)
+            </li>
+            <li><strong>Explicación:</strong> Para calcular el tiempo de caída libre, usamos la ecuación derivada de la cinemática. El objeto tarda aproximadamente 2.02 segundos en llegar al suelo.</li>
+            </ol>
+        </details>
+    </div>
+
+    <div class="ejercicio">
+        <h3>Ejercicio 3: Tiempo en movimiento acelerado</h3>
+        <p>Un automóvil parte del reposo y acelera uniformemente a razón de 2 m/s² hasta alcanzar una velocidad de 20 m/s. ¿Cuánto tiempo tarda en alcanzar esa velocidad?
+            Fórmula: \(( t = \frac{v_f - v_i}{a} )\)
+        </p>
+        <details>
+            <summary>Solución</summary>
+            <li><strong>Dato:</strong>\(( v_i = 0 ) m/s, ( v_f = 20 ) m/s, ( a = 2 ) m/s²\)</li>
+            <li><strong>Cálculo:</strong>
+                \(- [ t = \frac{20 - 0}{2} = \frac{20}{2} = 10 \text{ s} ]\)
+            </li>
+            <li><strong>Explicación:</strong> Para determinar el tiempo, usamos la ecuación de movimiento acelerado. Como el automóvil parte del reposo y acelera uniformemente, tardará 10 segundos en alcanzar los 20 m/s.</li>
+            </ol>
+          </details>
+          
+    </div>
+</body>
+</html>

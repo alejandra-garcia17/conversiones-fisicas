@@ -1,3 +1,4 @@
+// Objeto con factores de conversión respecto al metro
 const factores = {
   metro: 1,
   kilometro: 1000,
@@ -8,11 +9,18 @@ const factores = {
   milla: 1609.34
 };
 
-  function convertir() {
-    const valor = parseFloat(document.getElementById("valor").value);
-    const origen = document.getElementById("unidadOrigen").value;
-    const destino = document.getElementById("unidadDestino").value;
+function convertir() {
+  // Obtener el valor y las unidades seleccionadas
+  const valor = parseFloat(document.getElementById("valor").value);
+  const origen = document.getElementById("unidadOrigen").value;
+  const destino = document.getElementById("unidadDestino").value;
 
-    const resultado = valor * (factores[origen] / factores[destino]);
-    document.getElementById("resultado").innerText = `Resultado: ${resultado.toFixed(3)} ${destino}s`;
-  }
+  // Convertir el valor a la unidad destino usando factores
+  const resultado = valor * (factores[origen] / factores[destino]);
+  document.getElementById("resultado").innerText = `Resultado: ${resultado} ${destino}s`;
+
+  // Mostrar el procedimiento de conversión paso a paso
+  const procedimiento = `${valor} ${origen}(es) * (${factores[origen]} / ${factores[destino]}) = ${resultado} ${destino}s`;
+  document.getElementById("procedimiento").innerText = `Procedimiento: ${procedimiento}`;
+}
+

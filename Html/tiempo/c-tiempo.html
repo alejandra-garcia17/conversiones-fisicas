@@ -3,10 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Conversor de Tiempo</title>
-  <link rel="stylesheet" href="/CSS/pages_style/tiempo.css" />
+  <link rel="stylesheet" href="/CSS/pages_style/longitud.css" />
 
 </head>
 <body>
+  <header>
+    <h1>Conversores de Física</h1>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Calculadora de Conversiones</a>
+                <div class="dropdown-content">
+                    <a href="/Html/longitud/c-longitud.html">Longitud</a>
+                    <a href="/Html/masa/c-masa.html">Masa</a>
+                    <a href="/Html/tiempo/c-tiempo.html">Tiempo</a>
+                </div>
+            </li>
+            <li><a href="/HTML/nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="/HTML/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="contenedor">
   <h1>Conversor de Tiempo</h1>
   <p>Convierte entre segundos, minutos y horas.</p>
 
@@ -27,6 +46,8 @@
   <button onclick="convertir()">Convertir</button>
 
   <h2 id="resultado"></h2>
+  <div id="procedimiento"></div>
+</div>
 
   <script src="/JS/tiempo.js"></script>
 </body>

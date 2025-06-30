@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Conversor de Tiempo</title>
-  <link rel="stylesheet" href="/CSS/pages_style/longitud.css" />
-
+  <title>Conversor de Presión</title>
+  <link rel="stylesheet" href="/CSS/pages_style/longitud.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+<header>
     <h1>Conversores de Física</h1>
     <nav>
         <ul>
@@ -29,29 +29,31 @@
     </nav>
 </header>
 <div class="contenedor">
-  <h1>Conversor de Tiempo</h1>
-  <p>Convierte entre segundos, minutos y horas.</p>
+  <img src="/IMG/eicon.png" title="temperature icons" alt="regla" width="100" />
+  <h1><i class="fas fa-ruler"></i>Conversor de Presión</h1>
+  <p>Convierte entre Pascal, Kilopascal, Bar, Atmósferas y mmHg.</p>
 
   <input type="number" id="valor" placeholder="Ingrese un valor">
+    <select id="unidadOrigen">
+      <option value="pascal">Pascal (Pa)</option>
+      <option value="kilopascal">Kilopascal (kPa)</option>
+      <option value="bar">Bar</option>
+      <option value="atm">Atmósfera (atm)</option>
+      <option value="mmhg">mmHg</option>
+    </select>
+    <select id="unidadDestino">
+      <option value="pascal">Pascal (Pa)</option>
+      <option value="kilopascal">Kilopascal (kPa)</option>
+      <option value="bar">Bar</option>
+      <option value="atm">Atmósfera (atm)</option>
+      <option value="mmhg">mmHg</option>
+    </select>
 
-  <select id="unidadOrigen">
-    <option value="segundo">Segundo</option>
-    <option value="minuto">Minuto</option>
-    <option value="hora">Hora</option>
-  </select>
+  <button onclick="convertirPresion()">Convertir</button>
 
-  <select id="unidadDestino">
-    <option value="segundo">Segundo</option>
-    <option value="minuto">Minuto</option>
-    <option value="hora">Hora</option>
-  </select>
+  <h2 id="resultado">Resultado:</h2>
+  <div id="procedimiento"></div> </div>
 
-  <button onclick="convertir()">Convertir</button>
-
-  <h2 id="resultado"></h2>
-  <div id="procedimiento"></div>
-</div>
-
-  <script src="/JS/tiempo.js"></script>
+  <script src="/JS/presion.js"></script>
 </body>
 </html>

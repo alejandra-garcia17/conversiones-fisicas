@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Conversor de Tiempo</title>
-  <link rel="stylesheet" href="/CSS/pages_style/longitud.css" />
-
+  <title>Conversor de Temperatura</title>
+  <link rel="stylesheet" href="/CSS/pages_style/longitud.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -29,29 +29,27 @@
     </nav>
 </header>
 <div class="contenedor">
-  <h1>Conversor de Tiempo</h1>
-  <p>Convierte entre segundos, minutos y horas.</p>
+  <img src="/IMG/temicon.png" title="temperature icons" alt="regla" width="100" />
+  <h1><i class="fas fa-ruler"></i>Conversor de Temperatura</h1>
+  <p>Convierte entre Celsius (°C), Kelvin (K) y Fahrenheit (°F).</p>
 
   <input type="number" id="valor" placeholder="Ingrese un valor">
+    <select id="unidadOrigen">
+      <option value="celsius">Celsius (°C)</option>
+      <option value="kelvin">Kelvin (K)</option>
+      <option value="fahrenheit">Fahrenheit (°F)</option>
+    </select>
+    <select id="unidadDestino">
+      <option value="celsius">Celsius (°C)</option>
+      <option value="kelvin">Kelvin (K)</option>
+      <option value="fahrenheit">Fahrenheit (°F)</option>
+    </select>
 
-  <select id="unidadOrigen">
-    <option value="segundo">Segundo</option>
-    <option value="minuto">Minuto</option>
-    <option value="hora">Hora</option>
-  </select>
+  <button onclick="convertirTemperatura()">Convertir</button>
 
-  <select id="unidadDestino">
-    <option value="segundo">Segundo</option>
-    <option value="minuto">Minuto</option>
-    <option value="hora">Hora</option>
-  </select>
+  <h2 id="resultado">Resultado:</h2>
+  <div id="procedimiento"></div> </div>
 
-  <button onclick="convertir()">Convertir</button>
-
-  <h2 id="resultado"></h2>
-  <div id="procedimiento"></div>
-</div>
-
-  <script src="/JS/tiempo.js"></script>
+  <script src="/JS/temperatura.js"></script>
 </body>
 </html>

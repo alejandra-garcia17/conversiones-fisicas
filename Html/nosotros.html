@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre nosotros</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <style>
+    .sobre-nosotros {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff8d9;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .sobre-nosotros h1 {
+      text-align: center;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .sobre-nosotros p {
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .equipo {
+      margin-top: 30px;
+    }
+
+    .miembro {
+      background-color: #f3e7a1;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .miembro strong {
+      color: #2c3e50;
+    }
+
+    .tarjetas-equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    }
+
+    .miembro {
+    background-color: #f3e7a1;
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    }
+
+    .miembro:hover {
+    transform: translateY(-5px);
+    }
+
+    .miembro img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    }
+
+    .miembro strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    }
+
+    .miembro span {
+    font-size: 0.95rem;
+    color: #444;
+    }
+  </style>
+</head>
+<body>
+<header>
+    <h1>Conversores de Física</h1>
+    <nav>
+        <ul>
+            <li><a href="/index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li class="dropdown">
+                <a class="dropbtn"><i class="fas fa-calculator"></i> Calculadora de Conversiones<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/Html/longitud/c-longitud.html"><i class="fas fa-ruler-horizontal"></i> Longitud</a>
+                    <a href="/Html/masa/c-masa.html"><i class="fas fa-weight-hanging"></i> Masa</a>
+                    <a href="/Html/tiempo/c-tiempo.html"><i class="far fa-clock"></i> Tiempo</a>
+                    <a href="/Html/temperatura/c-temperatura.html"><i class="fas fa-thermometer-half"></i> Temperatura</a>
+                    <a href="/Html/presion/c-presion.html"><i class="fas fa-compress-arrows-alt"></i> Presión</a>
+                    <a href="/Html/energia/c-energia.html"><i class="fas fa-bolt"></i> Energía</a>
+                </div>
+            </li>
+            <li><a href="/HTML/nosotros.html"><i class="fas fa-info-circle"></i> Sobre Nosotros</a></li>
+            <li><a href="/HTML/contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <div class="sobre-nosotros">
+    <h1>👥 Sobre nosotros</h1>
+    <p>
+      Somos un equipo de estudiantes comprometidos con el aprendizaje y la enseñanza de la Física a través de herramientas digitales. 
+      Este proyecto nace con el objetivo de facilitar la comprensión de las conversiones de unidades mediante una plataforma interactiva, visual y práctica.
+    </p>
+
+    <p>
+      Cada sección del sitio fue creada con esfuerzo y dedicación, buscando que tanto estudiantes como docentes puedan acceder fácilmente a conversores, ejercicios y explicaciones claras.
+    </p>
+
+    <div class="equipo">
+    <h2>👩‍💻 Nuestro equipo</h2>
+
+    <div class="tarjetas-equipo">
+        <div class="miembro">
+        <img src="/IMG/alejandra.jpg" alt="Alejandra García">
+        <strong>Alejandra García</strong>
+        <span>Coordinadora general del proyecto</span>
+        </div>
+
+        <div class="miembro">
+        <img src="/IMG/alejandro.jpg" alt="Alejandro Martillo">
+        <strong>Alejandro Martillo</strong>
+        <span>Programador del conversor</span>
+        </div>
+
+        <div class="miembro">
+        <img src="/ruta/a/rey.jpg" alt="Rey Mayorga">
+        <strong>Rey Mayorga</strong>
+        <span>Encargado del diseño visual</span>
+        </div>
+
+        <div class="miembro">
+        <img src="/ruta/a/andres.jpg" alt="Andrés Toscano">
+        <strong>Andrés Toscano</strong>
+        <span>Documentación y redacción del contenido</span>
+        </div>
+
+        <div class="miembro">
+        <img src="/IMG/wimper.jpg" alt="Wimper Zamora">
+        <strong>Wimper Zamora</strong>
+        <span>Revisión de ejercicios y validación académica</span>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>

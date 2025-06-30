@@ -93,7 +93,6 @@
             max-width: 300px; /* Opcional: establece un ancho máximo para la imagen */
             height: auto; /* Mantiene la proporción de aspecto */
         }
-
         .ejercicio {
             background-color: #c7bf6b; /*cambiado*/
             padding: 15px;
@@ -114,6 +113,49 @@
             font-weight: bold;
             cursor: pointer;
             padding: 5px 0;
+        }
+        .ejercicio {
+            background-color: #c7bf6b;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .ejercicio h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .ejercicio ol {
+            padding-left: 20px;
+        }
+
+        .ejercicio img {
+            margin-top: 10px;
+            border-radius: 10px;
+            width: 160px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .ejercicio details {
+            margin-top: 15px;
+            background-color: #efdd95;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .ejercicio summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #0c0c0c;
+        }
+
+        .ejercicio summary:hover {
+            text-decoration: underline;
         }
         details[open] summary {
             margin-bottom: 10px;
@@ -141,9 +183,12 @@
                 <li class="dropdown">
                     <a class="dropbtn">Calculadora de Conversiones</a>
                     <div class="dropdown-content">
-                        <a href="/Html/longitud/c-longitud.html">Longitud</a>
-                        <a href="/Html/masa/c-masa.html">Masa</a>
-                        <a href="/Html/tiempo/c-tiempo.html">Tiempo</a>
+                        <a href="/Html/longitud/c-longitud.html"><i class="fas fa-ruler-horizontal"></i> Longitud</a>
+                        <a href="/Html/masa/c-masa.html"><i class="fas fa-weight-hanging"></i> Masa</a>
+                        <a href="/Html/tiempo/c-tiempo.html"><i class="far fa-clock"></i> Tiempo</a>
+                        <a href="/Html/temperatura/c-temperatura.html"><i class="fas fa-thermometer-half"></i> Temperatura</a>
+                        <a href="/Html/presion/c-presion.html"><i class="fas fa-compress-arrows-alt"></i> Presión</a>
+                        <a href="/Html/energia/c-energia.html"><i class="fas fa-bolt"></i> Energía</a>
                     </div>
                 </li>
                 <li><a href="/HTML/nosotros.html">Sobre Nosotros</a></li>
@@ -158,14 +203,15 @@
     </p>
     <p>
         Esta masa estándar fue determinada en 1887 y ha permanecido sin cambios desde entonces debido a la notable estabilidad de la aleación de platino e iridio.    
-    <p><em>Fuente: Raymond A. Serway y John W. Jewett, Jr., <strong>Física para Ciencias e Ingeniería, Volumen 1, Séptima edición</strong>.</em></p>
+    <h6><em>Fuente: Raymond A. Serway y John W. Jewett, Jr., <strong>Física para Ciencias e Ingeniería, Volumen 1, Séptima edición</strong>.</em></h6>
 
     <h2>Ejercicios Prácticos sobre Masa</h2>
     <div class="ejercicio">
         <h3>Ejercicio 1: Cálculo de masa a partir de densidad y volumen</h3>
         <p>Un bloque de aluminio tiene un volumen de 0.5 m³ y una densidad de 2700 kg/m³. ¿Cuál es su masa?
             Fórmula: \(m = \rho \cdot V \)
-        </p>
+        </p><br>
+        <img src="/IMG/m-ejercicio1.png" alt="densidad" width="150">
         <details>
             <summary>Solución</summary>
                 <li><strong>Dato:</strong>\(( V = 0.5 ) m³, ( \rho = 2700 ) kg/m³\)</li>
@@ -181,7 +227,8 @@
         <h3>Ejercicio 2:  Masa y fuerza gravitatoria</h3>
         <p>Un objeto con una masa de 10 kg se encuentra en la superficie de la Tierra, donde la aceleración gravitatoria es de 9.81 m/s². ¿Cuál es la fuerza que ejerce la gravedad sobre él?
             Fórmula: \(( F = m \cdot g )\)
-        </p>
+        </p><br>
+        <img src="/IMG/m-ejercicio2.png" alt="fuerza" width="150">
         <details>
             <summary>Solución</summary>
             <li><strong>Dato:</strong>- ( m = 10 ) kg, ( g = 9.81 ) m/s²</li>
@@ -198,7 +245,8 @@
         <h3>Ejercicio 3: Conservación de la masa en colisiones</h3>
         <p>Un objeto de 5 kg se mueve a 4 m/s y choca con otro objeto en reposo de 3 kg. Si después del choque ambos objetos se mueven juntos, ¿cuál será su velocidad final?
             Fórmula: \(( m_1 v_1 + m_2 v_2 = (m_1 + m_2) v_f )\)
-        </p>
+        </p><br>
+        <img src="/IMG/m-ejercicio3.png" alt="colisiones" width="150">
         <details>
             <summary>Solución</summary>
             <li><strong>Dato:</strong>\(( m_1 = 5 ) kg, ( v_1 = 4 ) m/s, ( m_2 = 3 ) kg, ( v_2 = 0 ) m/s\)</li>
@@ -209,7 +257,6 @@
             <li><strong>Explicación:</strong> Usamos la conservación del momento para calcular la velocidad final después del choque. La velocidad combinada de los objetos después de la colisión es 2.5 m/s.</li>
             </ol>
           </details>
-          
     </div>
 </body>
 </html>

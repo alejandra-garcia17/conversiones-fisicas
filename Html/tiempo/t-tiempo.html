@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Definición de Masa en Física</title>
+    <title>Definición del Tiempo en Física</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -115,6 +115,49 @@
             cursor: pointer;
             padding: 5px 0;
         }
+        .ejercicio {
+            background-color: #c7bf6b;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .ejercicio h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .ejercicio ol {
+            padding-left: 20px;
+        }
+
+        .ejercicio img {
+            margin-top: 10px;
+            border-radius: 10px;
+            width: 160px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .ejercicio details {
+            margin-top: 15px;
+            background-color: #efdd95;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .ejercicio summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #0c0c0c;
+        }
+
+        .ejercicio summary:hover {
+            text-decoration: underline;
+        }
         details[open] summary {
             margin-bottom: 10px;
         }
@@ -141,9 +184,12 @@
                 <li class="dropdown">
                     <a class="dropbtn">Calculadora de Conversiones</a>
                     <div class="dropdown-content">
-                        <a href="/Html/longitud/c-longitud.html">Longitud</a>
-                        <a href="/Html/masa/c-masa.html">Masa</a>
-                        <a href="/Html/tiempo/c-tiempo.html">Tiempo</a>
+                        <a href="/Html/longitud/c-longitud.html"><i class="fas fa-ruler-horizontal"></i> Longitud</a>
+                        <a href="/Html/masa/c-masa.html"><i class="fas fa-weight-hanging"></i> Masa</a>
+                        <a href="/Html/tiempo/c-tiempo.html"><i class="far fa-clock"></i> Tiempo</a>
+                        <a href="/Html/temperatura/c-temperatura.html"><i class="fas fa-thermometer-half"></i> Temperatura</a>
+                        <a href="/Html/presion/c-presion.html"><i class="fas fa-compress-arrows-alt"></i> Presión</a>
+                        <a href="/Html/energia/c-energia.html"><i class="fas fa-bolt"></i> Energía</a>
                     </div>
                 </li>
                 <li><a href="/HTML/nosotros.html">Sobre Nosotros</a></li>
@@ -165,6 +211,7 @@
         <p>Un coche viaja a una velocidad constante de 90 km/h y debe recorrer 270 km. ¿Cuánto tiempo tardará en llegar a su destino?
             Fórmula: \(( t = \frac{d}{v} )\)
         </p>
+        <img src="/IMG/tejercicio1.png" alt="colisiones" width="150">
         <details>
             <summary>Solución</summary>
                 <li><strong>Dato:</strong>- ( d = 270 ) km, ( v = 90 ) km/h</li>
@@ -180,6 +227,7 @@
         <p>Un objeto se deja caer desde una altura de 20 m. ¿Cuánto tiempo tarda en llegar al suelo? (Considerando que la aceleración gravitatoria es ( g = 9.81 ) m/s² y despreciando la resistencia del aire).
             Fórmula: \(( t = \sqrt{\frac{2d}{g}} )\)
         </p>
+        <img src="/IMG/t-ejercicio2.png" alt="colisiones" width="150">
         <details>
             <summary>Solución</summary>
             <li><strong>Dato:</strong>- ( d = 20 ) m, ( g = 9.81 ) m/s²</li>
@@ -196,6 +244,7 @@
         <p>Un automóvil parte del reposo y acelera uniformemente a razón de 2 m/s² hasta alcanzar una velocidad de 20 m/s. ¿Cuánto tiempo tarda en alcanzar esa velocidad?
             Fórmula: \(( t = \frac{v_f - v_i}{a} )\)
         </p>
+        <img src="/IMG/t-ejercicio3.png" alt="colisiones" width="150">
         <details>
             <summary>Solución</summary>
             <li><strong>Dato:</strong>\(( v_i = 0 ) m/s, ( v_f = 20 ) m/s, ( a = 2 ) m/s²\)</li>
@@ -205,7 +254,6 @@
             <li><strong>Explicación:</strong> Para determinar el tiempo, usamos la ecuación de movimiento acelerado. Como el automóvil parte del reposo y acelera uniformemente, tardará 10 segundos en alcanzar los 20 m/s.</li>
             </ol>
           </details>
-          
     </div>
 </body>
 </html>

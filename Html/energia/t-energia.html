@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definición de la Energia en Física</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f8efbd; /*cambiado*/
+        }
+        /*posible header xd*/
+        header {
+        background-color: #98a749; /*cambiado*/
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+        }
+
+        nav ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        nav ul li {
+        display: inline;
+        margin: 0 10px;
+        }
+
+        nav ul li a {
+        color: #111010;
+        text-decoration: none;
+        }
+
+        /* Estilos del menú desplegable */
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #c7bf6b; /*cambiado*/
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+        background-color: #555;
+        }
+        .accordion {
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: none;
+            outline: none;
+            padding: 10px;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        .accordion:hover {
+            background-color: #d9d9d9;
+        }
+
+        .imagen-derecha {
+            float: left;
+            margin-left: 5px; /* Añade un espacio entre la imagen y el texto */
+            margin-bottom: 80px; /* Opcional: añade un espacio debajo de la imagen */
+            margin-right: 15px;
+            max-width: 300px; /* Opcional: establece un ancho máximo para la imagen */
+            height: auto; /* Mantiene la proporción de aspecto */
+        }
+
+        .ejercicio {
+            background-color: #c7bf6b; /*cambiado*/
+            padding: 15px;
+            margin-bottom: 1em;
+            border-radius: 5px;
+        }
+        .latex {
+            font-style: italic;
+        }
+        details {
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            background-color: #efdd95; /*cambiado*/
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px 0;
+        }
+        .ejercicio {
+            background-color: #c7bf6b;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .ejercicio h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .ejercicio ol {
+            padding-left: 20px;
+        }
+
+        .ejercicio img {
+            margin-top: 10px;
+            border-radius: 10px;
+            width: 160px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .ejercicio details {
+            margin-top: 15px;
+            background-color: #efdd95;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .ejercicio summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #0c0c0c;
+        }
+
+        .ejercicio summary:hover {
+            text-decoration: underline;
+        }
+        details[open] summary {
+            margin-bottom: 10px;
+        }
+        .boton-pagina {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .boton-pagina:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conversores de Física</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Calculadora de Conversiones</a>
+                    <div class="dropdown-content">
+                        <a href="/Html/longitud/c-longitud.html"><i class="fas fa-ruler-horizontal"></i> Longitud</a>
+                        <a href="/Html/masa/c-masa.html"><i class="fas fa-weight-hanging"></i> Masa</a>
+                        <a href="/Html/tiempo/c-tiempo.html"><i class="far fa-clock"></i> Tiempo</a>
+                        <a href="/Html/temperatura/c-temperatura.html"><i class="fas fa-thermometer-half"></i> Temperatura</a>
+                        <a href="/Html/presion/c-presion.html"><i class="fas fa-compress-arrows-alt"></i> Presión</a>
+                        <a href="/Html/energia/c-energia.html"><i class="fas fa-bolt"></i> Energía</a>
+                    </div>
+                </li>
+                <li><a href="/HTML/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/HTML/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Definición de la Energia en Física</h1>
+    <img class="imagen-derecha" src="/IMG/e-t2.jpg" alt="Imagen representativa de tiempo">
+    <p>En física, la energía es la capacidad de un cuerpo o sistema para realizar trabajo, causar cambios o generar movimiento. Se manifiesta de diversas formas, como energía cinética (asociada al movimiento), energía potencial (almacenada en función de la posición o configuración) y energía térmica (relacionada con la temperatura). La energía es una magnitud conservada, lo que significa que no se crea ni se destruye, solo se transforma de una forma a otra.</p>
+    <p>La energía se mide en julios (J) en el Sistema Internacional de Unidades.</p>
+    <p><em>Fuente: Raymond A. Serway y John W. Jewett, Jr., <strong>Física para Ciencias e Ingeniería, Volumen 1, Séptima edición</strong>.</em></p><br>
+    <br>
+    <h2>Ejercicios Prácticos sobre la energia</h2>
+    <div class="ejercicio">
+        <h3>Ejercicio 1: Energía Cinética en el Lanzamiento de un Proyectil</h3>
+        <p>Una pelota de 0.25 kg es lanzada horizontalmente a 12 m/s desde una mesa.</p>
+        <p>a. ¿Cuál es su energía cinética inicial?</p>
+        <p>b. ¿A qué velocidad debería lanzarse otra pelota de 0.40 kg para que tenga la misma energía cinética?</p>
+        <strong>Pista: Usa la fórmula:</strong>
+        \(E_k = \frac{1}{2} m v^2\)
+        <details>
+            <summary>Solución</summary>
+            <img src="/IMG/e-ejer1.png" alt="colisiones" width="150">
+                <li><strong>Dato:</strong>
+                    <ul>
+                        <li>
+                            <p>Masa \(m_1 = 0.25 \, kg\)</p>
+                        </li>
+                        <li>
+                            <p>Velocidad \(v_1 = 12 \, m/s\)</p>
+                        </li>
+                        <li>
+                            <p>Fórmula: \(E_k = \frac{1}{2} m v^2\)</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Cálculo:</strong>
+                    <h4>a. Energía cinética inicial:</h4>
+                    <ul>
+                        <li>
+                            \(E_k = \frac{1}{2} \cdot 0.25 \cdot (12)^2 = 0.125 \cdot 144 = \textbf{18 J}\)
+                        </li>
+                    </ul>
+                    <h4>b. Velocidad necesaria para otra masa m_2 = 0.40\,kg:</h4>
+                    <ul>
+                        <li>
+                            \(E_k = 18 = \frac{1}{2} \cdot 0.40 \cdot v^2 \),<br>
+                        </li>
+                        <li>
+                            \(\Rightarrow v^2 = \frac{2 \cdot 18}{0.40} = 90\)
+                        </li>
+                        <li>
+                            \(\Rightarrow v = \sqrt{90} \approx \textbf{9.49 m/s}\)
+                        </li>
+                    </ul>
+                </li>
+        </details>
+    </div>
+
+    <div class="ejercicio">
+        <h3>Ejercicio 2:  Energía Potencial y Conservación en Montaña Rusa</h3>
+        <p>Un carrito de 500 kg está en la cima de una colina de 25 m de altura.</p>
+        <p>a. ¿Cuál es su energía potencial gravitatoria respecto al suelo?</p>
+        <p>b. ¿Cuánta energía cinética tendría al llegar al pie de la colina, suponiendo que no hay pérdida de energía?</p>
+        <strong>Pista: Usa la ecuación:</strong>
+        <ul>
+            <il>
+                <p>Energía potencial: \(E_p = mgh\)</p>
+            </il>
+            <il>
+                <p>Conservación de la energía: \(E_p = E_k\)</p>
+            </il>
+        </ul>
+        <details>
+            <summary>Solución</summary>
+            <img src="/IMG/e-ejer2.png" alt="colisiones" width="150">
+            <li><strong>Dato:</strong>
+                    <ul>
+                        <li>
+                            <p>Masa \(m = 500\,kg\)</p>
+                        </li>
+                        <li>
+                            <p>Altura \(h = 25\,m\)</p>
+                        </li>
+                        <li>
+                            <p>\(g = 9.81\,m/s^2\)</p>
+                        </li>
+                    </ul>
+                </li>
+            <li><strong>Cálculo:</strong>
+                <h4>a. Energía potencial en la cima:</h4>
+                    <ul>
+                        <li>
+                            \(E_p = mgh = 500 \cdot 9.81 \cdot 25 = \textbf{122,625 J}\)
+                        </li>
+                    </ul>
+                <h4>b. Energía cinética al pie (sin pérdida):</h4>
+                    <ul>
+                        <li>
+                            <p>Por conservación de la energía: \(E_k = E_p = \textbf{122,625 J}\)</p>
+                        </li>
+                    </ul>
+            </li>
+        </details>
+    </div>
+
+    <div class="ejercicio">
+        <h3>Ejercicio 3: Trabajo realizado por una Fuerza Variable</h3>
+        <p>Una fuerza F(x) = 3x^2 actúa sobre un objeto a lo largo de una recta desde x = 0 m hasta x = 2 m.</p>
+        <ul>
+        <p>¿Qué trabajo realiza la fuerza sobre el objeto en ese intervalo?</p> 
+        </ul>
+        <strong>Pista:</strong>
+        <p>El trabajo es el área bajo la curva: \(W = \int_{0}^{2} 3x^2 \, dx\)</p>
+        <details>
+            <summary>Solución</summary>
+            <img src="/IMG/e-ejer3.png" alt="colisiones" width="150">
+            <li><strong>Cálculo:</strong>
+                <ul>
+                    <li>Fuerza: \(F(x) = 3x^2\)</li>
+                    <li>Intervalo: \(x \in [0, 2]\)</li>
+                    <li>Trabajo: \(W = \int_0^2 3x^2 \, dx = 3 \int_0^2 x^2 \, dx = 3 \left[ \frac{x^3}{3} \right]_0^2 = x^3 \Big|_0^2 = 8 - 0 = \textbf{8 J}\)</li>
+                </ul>
+            </li>
+        </details>
+    </div>
+</body>
+</html>  
